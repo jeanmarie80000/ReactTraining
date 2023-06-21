@@ -22,6 +22,6 @@ function ShoppingList() {
             </ul>
         </div>
     );
-}
+}f
 
 export default ShoppingList;
