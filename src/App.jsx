@@ -1,15 +1,20 @@
-import { React, useState, StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import Banner from './shoppingCart/shoppingCart';
-import ShoppingList from './shoppingCart/shoppingList';
+import { React } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './shoppingCart/Home';
+import Country from './data/dataCountry';
 import './styles.css';
 
-
-function App() {
+const App = () => {
   
   return (
-    <ShoppingList />
-  );
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/country' element={<Country />} />
+
+        {/* All falses path guide to home */}
+        <Route path='*' element={<Home />} />
+      </Routes>
+  )
 }
 
 export default App;
