@@ -1,6 +1,6 @@
 import { React } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from './shoppingCart/Home';
+import Home from './countryList/Home';
 import Country from './data/dataCountry';
 import './styles.css';
 

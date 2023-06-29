@@ -1,6 +1,6 @@
 import {React, useState, useEffect} from 'react';
 import axios  from 'axios';
-import Navigation from '../shoppingCart/Nav';
+import Navigation from '../countryList/Nav';
 
 export default function Country() {
 
